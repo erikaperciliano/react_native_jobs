@@ -53,7 +53,7 @@ const Welcome = () => {
               <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
-          keyExtractor={item => item}
+          keyExtractor={item => item?.job_id}
           contentContainerStyle={{ columnGap: SIZES.small }}
           horizontal
         />
